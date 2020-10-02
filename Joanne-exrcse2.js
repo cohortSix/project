@@ -1,20 +1,23 @@
 // Declaring the tests function.
 function tests(test1,test2)
 {
-    // Asigning the greater test mark to greater.
+// Asigning the greater test mark to greater.
    let greater = test2>test1?test1:test2 
+
 // Stores a greater test results.
    return greater 
 }
 //Declaring the Coursework function.
  function coursework(cswork) 
  {
-     //Asigning the cswrk plus the test mark to coursework.
+     
+//Asigning the cswrk plus the test mark to coursework.
  let coursework = cswork + tests(80,80)
 
 
  //Prints the coursework marks on the console.
  console.log(coursework)
+
  //Stores the coursework mark.
 return coursework
 
