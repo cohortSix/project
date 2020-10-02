@@ -1,4 +1,4 @@
-// A function test declared and assigned two parameters namely: test1 & test2.
+// The function test declared and assigned two parameters namely: test1 & test2.
 function tests(test1, test2) {
     // 
     /// The variable greater declared and assigned a ternary operator to evaluate the values.
