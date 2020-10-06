@@ -1,4 +1,4 @@
-// Document formated using prettier library.
+//Document formated using prettier library.
 //Defining a parameteralised function - tests with parameters - test1 and test2.
 function tests(test1,test2)
 {
