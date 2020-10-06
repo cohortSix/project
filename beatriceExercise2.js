@@ -14,7 +14,7 @@ function coursework(cswork) {
     console.log(coursework)
     //Display the value of 'coursework' however lack of a closing curly bracket stops the code from running.
     return coursework
-
+}
 
 
     //Declare a function'avg' with a parameter 'a'
