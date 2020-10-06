@@ -81,9 +81,9 @@ The declared variable fmark is then initialized with the sum of the returned res
 
 fnal();
 /**
-The function named coursework lacked an ending brace to define its scope.
-A change on line 37, (adding an ending brace '}') removed the bug in the code.
+The function named coursework lacked an closing brace to define its scope.
+A change on line 29, (adding an closing brace '}') removed the bug in the code.
 The code outputs two values onto the console; 170 and 79.
-The first computed value 170 is the value assigned to variable coursework on line 31 and output on line 33.
-The second computed value 79 is the value assigned to variable fmark on line 99 and output on line 100.
+The first computed value 170 is the value assigned to variable coursework on line 23 and output on line 25.
+The second computed value 79 is the value assigned to variable fmark on line 76 and output on line 77.
 **/
