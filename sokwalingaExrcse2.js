@@ -1,3 +1,4 @@
+// Document formated using prettier library.
 //Defining a parameteralised function - tests with parameters - test1 and test2.
 function tests(test1,test2)
 {
@@ -93,9 +94,10 @@ fnal()
 This code returns a sytanx error when run.
 This is because function - coursework does not have a closing brace (}) 
 which goes against Javascript syntax for defining functions. 
-Placing a closing curly brace (}) for this function, say on line 34, will make this code run without running into a syntax error.
+Placing a closing curly brace (}) for the function coursework will make this code run without running into a syntax error.
 
-It is also good practice to put a termination (;) at the end of statements say on line 90.
+It is also good practice to put a termination (;) at the end of statements say after calling fnal function.
 However, Javascript being a 'friendly' language, abscence of the termination won't stop the code from running.
 **/
+
 
