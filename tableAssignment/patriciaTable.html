@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html Table</title>
+    <style>
+      table {
+        margin-left: 100px;
+        border: 2px solid olivedrab;
+        border-collapse: collapse;
+        
+      }
+    
+      td {
+        height: 50px;
+        border: 2px solid olivedrab;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">Draw a Table using html Only</h1>
+
+  <!--Resized table cell widths using the colspan attribute and used css in the style tag
+      to define the height and width -->
+
+    <table style="width: 80%" class="grid-container">
+      <tr>
+        <td colspan="2"></td>
+        <td colspan="1"></td>
+        
+      </tr>
+      <tr>
+        <td colspan="1"></td>
+        <td colspan="2"></td>
+
+      </tr>
+      <tr>
+        <td colspan="2"></td>
+        <td colspan="1"></td>
+        
+      </tr>
+    </table>
+  </body>
+</html>
