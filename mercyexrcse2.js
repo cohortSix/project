@@ -6,7 +6,6 @@ function tests(test1,test2)
 let greater = test2>test1?test1:test2
 //The return keyword specifies the value to be returned using the variable greater.
 return greater
-
 }
 
 //A function coursework is defined or declared with a parameter cswork.
@@ -20,7 +19,6 @@ return greater
  console.log(coursework)
  //The return keyword specifies the value to be returned in the variable coursework.
 return coursework
- 
  
 
 //A function avg is declared with a parameter a.
