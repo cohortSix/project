@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <style>
+      table,
+      td,
+      th {
+        border: solid black;
+      }
+      table {
+        border-collapse: collapse;
+      }
+      td,
+      th {
+        width: auto;
+        height: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td colspan="4">heading 1 that spans when data is too long</td>
+        <td>heading 2</td>
+      </tr>
+      <tr>
+        <td>table data 1</td>
+        <td colspan="4">
+          table data 2 that spans when data is too long.......
+        </td>
+      </tr>
+      <tr>
+        <td colspan="4">table data 3 that spans when data is too long</td>
+
+        <td>table data 4</td>
+      </tr>
+    </table>
+  </body>
+</html>
