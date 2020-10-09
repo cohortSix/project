@@ -1,6 +1,6 @@
 /*
 	I created an html file, linked this js file and used the console to debug.
-	I addressed the issues has they appeared in the console on refresh, line by line.
+	I addressed the issues has they appeared in the console on refresh, line by line.		
 */
 
 var car;
@@ -14,7 +14,7 @@ var func2 = function () {
 var func3 = function () {};
 
 var func4 = function () {
-	//The object is Car and the called object was Ca.
+	//The constructor object is Car and not Ca. 
 	//Missing an 'r'. Added it.
 	car = new Car();
 	car.funcX();
