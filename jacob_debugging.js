@@ -37,7 +37,7 @@ var Car = function () {
 	};
 
 	this.funcZ = function () {
-		//The string argument passed to the trace function didn't abide by the acceptable string syntax rules.
+		//The string argument passed to the trace method didn't abide by the acceptable string syntax rules.
 		console.trace("trace car");
 	};
 };
@@ -71,7 +71,7 @@ var Car = function () {
 		this.funcZ();
 	};
 	this.funcZ = function () {
-		//The string argument passed to the trace function didn't abide by the acceptable string syntax rules.
+		//The string argument passed to the trace method didn't abide by the acceptable string syntax rules.
 		console.trace("trace car");
 	};
 };
