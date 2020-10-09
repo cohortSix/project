@@ -1,0 +1,11 @@
+.col-4{
+    border: 2px solid turquoise;
+}
+.col-8{
+    border: 2px solid turquoise;
+}
+
+.container{
+    border: 2px solid turquoise;
+    margin-top: 20px;
+}
