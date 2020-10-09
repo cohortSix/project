@@ -1,6 +1,6 @@
 /*
-	I created an html file, linked this js file and used the console to debug,
-	addressing issues by the line returned in the console.
+	I created an html file, linked this js file and used the console to debug.
+	I addressed the issues has they appeared in the console on refresh, line by line.
 */
 
 var car;
@@ -22,7 +22,7 @@ var func4 = function () {
 
 var Car = function () {
 	/*
-	The values assigned to be assigned to the instances of object Car,
+	The values to be assigned to the instances of object Car,
 	on invocation don't abide by the acceptable string syntax. 
 	Made changes to them.
 */
@@ -58,7 +58,7 @@ var func4 = function () {
 };
 var Car = function () {
 	/*
-	The values assigned to be assigned to the instances of object Car,
+	The values to be assigned to the instances of object Car,
 	on invocation don't abide by the acceptable string syntax. 
 	Made changes to them.
 */
