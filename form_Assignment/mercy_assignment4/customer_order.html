@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<title>Customer Order Form</title>
+	</head>
+	<body>
+		<div class="container">
+			<form>
+				<legend class="title">Customer Order Form</legend>
+				<div class="row">
+					<div class="form-group col-md-6 padding-0">
+						<fieldset>
+							<legend>Customer Information</legend>
+							<div>
+								<label for="CustomerID">Customer ID:</label>
+								<input type="text" placeholder="123-456-789" />
+								<br />
+								<label for="Name">Name :</label>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<input type="text" id="name" placeholder="Mercy Wamanga" />
+								<br />
+								<label for="State">State :</label>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<input type="text" placeholder="CA" />
+
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<input
+									type="checkbox"
+									name="Retail Customer"
+									id="retail-customer"
+									checked
+								/>
+								<label for="retail-customer">Retail Customer</label>
+							</div>
+						</fieldset>
+					</div>
+					<div class="form-group col-md-6 padding-0">
+						<fieldset>
+							<legend>Shipping</legend>
+							<div class="radio-button-group">
+								<input type="radio" id="ups" name="shipping-item" value="UPS" />
+								<label for="ups">UPS</label>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								<input
+									type="radio"
+									id="fedex-ground"
+									name="shipping-item"
+									value="FedEx-Ground"
+								/>
+								<label for="fedex-ground">FedEx-Ground</label><br /><br />
+
+								<input
+									type="radio"
+									id="us-postal-air"
+									name="shipping-item"
+									value="US Postal Air"
+								/>
+								<label for="us-postal-air">US Postal Air</label>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+								<input
+									type="radio"
+									id="fedex-air"
+									name="shipping-item"
+									value="FedEx Air"
+								/>
+								<label for="fedex-air">FedEx Air</label><br />
+							</div>
+						</fieldset>
+					</div>
+
+					<div class="form-group col-md-6 padding-0">
+						<fieldset>
+							<legend>Part Ordered</legend>
+							<div>
+								<label for="CustomerID">Port Number:</label>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<input type="text" placeholder="123" />
+								<br />
+								<label for="description">Description :</label>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<input type="text" placeholder="Description" />
+								<br />
+								<label for="price-per-part">Price Per Part :</label>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<input type="text" placeholder="1000" />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<label for="quantity">Quantity :</label>
+								<input type="text" id="quantity" placeholder="1" />
+								<br />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								<input type="checkbox" name="oversize" id="oversize" />
+								<label for="oversize">Oversize Container?</label>
+							</div>
+						</fieldset>
+					</div>
+					<div class="form-group col-md-6 padding-0">
+						<fieldset>
+							<legend>Output</legend>
+							<div>
+								<label for="cost">Cost:</label>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<input type="text" placeholder="shs.1000" />
+								<br />
+								<label for="sales-tax">Sales Tax :</label>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<input type="text" placeholder="1.5" />
+								<br />
+								<label for="shipping-handling">Shipping & Handling :</label>
+								&nbsp;
+								<input type="text" placeholder="shs.2500" /><br />
+								<label for="sales-tax">Total :</label>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								<input type="text" placeholder="shs.3000" />
+							</div>
+						</fieldset>
+					</div>
+				</div>
+				<div class="button">
+					<button type="button" id="compute" class="btn btn-primary btn-sm">
+						Compute
+					</button>
+					<button type="button" id="order" class="btn btn-primary btn-sm">
+						New Order
+					</button>
+
+					<button type="button" id="exit" class="btn btn-primary btn-sm">
+						Exit
+					</button>
+				</div>
+			</form>
+		</div>
+		<script src="js/jquery-3.3.1.slim.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

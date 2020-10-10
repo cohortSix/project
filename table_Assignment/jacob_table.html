@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Table</title>
+
+		<!--Not advisable but for the sake of uploading a single file, css embedded in here-->
+		<style type="text/css">
+			table {
+				width: 80%;
+				margin-top: 50px;
+				margin-right: auto;
+				margin-left: auto;
+				border: 1px solid grey;
+			}
+			tr {
+				display: flex;
+				flex-direction: row;
+				min-height: 40px;
+			}
+			td {
+				display: block;
+			}
+			td.larger {
+				width: 70%;
+				background-color: rgb(250, 250, 250);
+				border: 1px solid grey;
+			}
+			td.smaller {
+				width: 30%;
+				border: 1px solid grey;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<table>
+				<tbody>
+					<tr>
+						<td class="larger"></td>
+						<td class="smaller"></td>
+					</tr>
+					<tr>
+						<td class="smaller"></td>
+						<td class="larger"></td>
+					</tr>
+					<tr>
+						<td class="larger"></td>
+						<td class="smaller"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>

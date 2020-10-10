@@ -1,0 +1,17 @@
+/*center position of the form.*/
+.container{
+     
+      margin-left: 100px;
+      margin-top: 200px;
+      margin-right: 100px;
+}
+/*Define border colour.*/
+.col{
+    border: 1px solid  blue;
+}
+.col-md-4{
+    border: 1px solid  blue;
+}
+.col-md-8{
+    border: 1px solid blue;
+}
