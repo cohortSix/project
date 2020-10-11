@@ -1,0 +1,137 @@
+.container {
+  background-color: #fce7e0;
+  height: 680px;
+  margin-top: 40px;
+}
+
+.col-5 {
+  background-color: rgb(247, 149, 113);
+  height: 280px;
+  /* margin: 15px; */
+  margin-left: 50px;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: black;
+  font-weight: bold;
+}
+
+/* .row{
+  background-color: red;
+} */
+
+fieldset {
+  border: 2px solid gray;
+  width: 106.7%;
+  margin-top: 20px;
+  margin-left: -15px;
+  border-radius: 5px;
+}
+
+legend {
+  width: auto;
+  font-size: 16px;
+  position: relative;
+}
+
+.customer-info {
+  padding-bottom: 57px;
+}
+
+.shipping {
+  padding-bottom: 112px;
+}
+
+.input-name {
+  margin-left: 47px;
+  width: 330px;
+  padding-right: 20px;
+}
+
+.input-state {
+  margin-left: 51px;
+  width: 170px;
+}
+
+.input-retail {
+  margin-left: 10px;
+}
+
+.label {
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  padding-top: 25px;
+  /* padding-left: 10px; */
+}
+
+.label-retail {
+  padding-right: 20px;
+}
+
+.btn {
+  background-color: rgb(247, 149, 113);
+  width: 120px;
+  border: 2px solid gray;
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+.exit {
+  float: right;
+  margin-right: 60px;
+}
+
+.compute{
+  margin-left: 33px;
+}
+
+.ship{
+  margin-left: 5px;
+}
+
+.ship-1 {
+  margin-left: 126px;
+}
+
+.ship-2 {
+  margin-left: 60px;
+}
+
+.input-part {
+  width: 320px;
+  margin-left: 10px;
+}
+
+.input-desc {
+  width: 320px;
+  margin-left: 20px;
+}
+
+.input-price {
+  width: 150px;
+  margin-left: 2px;
+  text-align: right;
+}
+
+.input-quantity {
+  width: 50px;
+  text-align: right;
+}
+
+.quantity {
+  margin-left: 40px;
+}
+
+.input-size {
+  margin-left: 110px;
+}
+
+.input-prices {
+  float: right;
+  text-align: right;
+  margin-top: 20px;
+  width: 220px;
+  margin-right: 10px;
+}
