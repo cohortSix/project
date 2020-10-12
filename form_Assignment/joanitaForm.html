@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Signup Form Assignment</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width:device-width, initial-scale=1.0" />
+    <style>
+      fieldset {
+        width: 90%;
+        padding: 2%;
+        margin: 1%;
+        background-color: rgb(250, 205, 151);
+        border-color: white;
+      }
+
+      form {
+        padding: 5%;
+        width: 80%;
+        height: 25%;
+        margin: 5% solid white;
+        background-color: rgb(250, 234, 218);
+      }
+
+      .grid-container,
+      fieldset {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 1%;
+      }
+      #exit {
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <div class="grid-container">
+        <!-- Customer information fieldset. -->
+        <fieldset>
+          <legend></legend>
+
+          <p>Customer Information</p>
+          <label for="custId">Customer ID:</label>
+          <input type="text" id="custId" placeholder=" 123-45-6789" /><br />
+
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="Tom Thumb" />
+
+          <br />
+
+          <label for="state">State:</label>
+          <input type="text" id="state" placeholder="CA" /><br />
+
+          <input type="checkbox" checked />
+          <label>Retail Customer</label>
+        </fieldset>
+
+        <!-- Shipping field set. -->
+        <fieldset>
+          <legend></legend>
+
+          <p>Shipping</p>
+          <input type="radio" id="ups" checked />
+          <label for="ups">UPS</label><br />
+
+          <input type="radio" id="fed" />
+          <label for="fed">Fed Ex Ground</label><br />
+
+          <input type="radio" id="postal" />
+          <label for="postal">US Postal Air</label><br />
+
+          <input type="radio" />
+          <label>Fed Ex Air</label>
+        </fieldset>
+
+        <!-- Part ordered fieldset. -->
+        <fieldset>
+          <legend></legend>
+
+          <p>Part Ordered</p>
+
+          <label for="pNumber">Part Number:</label>
+          <input type="number" id="pNumber" placeholder="10152" /><br />
+
+          <label for="description">Description:</label>
+          <input type="text" id="description" placeholder="Oil Filter" /><br />
+
+          <label for="price">Price Per Part:</label>
+          <input type="text" id="price" placeholder="$7.51" /><br />
+
+          <label for="quantity">Quantity</label>
+          <input type="number" id="quantity" placeholder="2" />
+        </fieldset>
+
+        <!-- Output fieldset. -->
+        <fieldset>
+          <legend></legend>
+
+          <p>Output</p>
+
+          <label for="cost">Cost:</label>
+          <input type="text" id="cost" placeholder="$15.02" /><br />
+
+          <label for="tax">Sales Tax:</label>
+          <input type="number" id="tax" placeholder="1.50" /><br />
+
+          <label for="shipping">Shipping and Handling:</label>
+          <input type="number" id="shipping" placeholder="14.00" /><br />
+
+          <label for="total">Total:</label>
+          <input type="text" id="total" placeholder="$30.52" />
+        </fieldset>
+      </div>
+      <br />
+
+      <input type="submit" value="Compute" />
+
+      <input type="submit" value="New Order" />
+
+      <input type="submit" id="exit" value="Exit" />
+    </form>
+  </body>
+</html>
