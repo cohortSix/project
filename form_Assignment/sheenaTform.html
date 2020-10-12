@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheena Form</title>
+    
+    <style>
+body {
+overflow: hidden;
+margin: 20px;
+box-sizing: border-box;
+}
+.form-class {
+    margin: auto;
+    width: 1200px;
+}
+form {
+    background-color: darkorange;
+    padding: 5px;
+}
+fieldset {
+    background-color: orange;
+    border: 2px solid white;
+} 
+legend {
+    padding: 5px;
+}
+fieldset {
+    height: 150px;
+}
+.field-set {
+    float: left;
+    width: 563px;
+}
+.row2 {
+    clear: both;
+}
+.field-set1 {
+    float: left;
+    width: 563px;
+}
+.btn-exit {
+    float: right;
+}
+button {
+    margin: 5px;
+    padding: 5px;
+    width: 150px;
+    background-color: orange;
+    border: 2px solid white;
+    border-radius: 10%;
+}
+    </style>
+</head>
+<body>
+    <div class="form-class">
+            <form>
+                <div class="row">
+                <div>
+
+            <fieldset class="field-set">
+                <legend>Contact Information</legend>
+                    <label for="id">Customer ID: </label>&nbsp;
+                    <input id="id" placeholder="123-456-789"><br><br>
+        
+                    <label for="name">Name: </label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <input id="telephone" placeholder="Tom Thumb"><br><br>
+        
+                    <label for="state">State: </label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                    <input id="state" placeholder="CA">
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                    <input type="checkbox" id="checkbox" name="retail" value="retail" checked>
+                    <label for="checkbox">Retail customer</label><br>
+            </fieldset>
+                </div>
+                <div>
+            <fieldset class="field-set">
+                <legend>Shipping</legend>
+                <input type="radio" id="ups" name="ups" value="ups" checked>
+                <label for="ups">UPS</label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <input type="radio" id="fedex" name="fedex" value="fedex">
+                <label for="fedex">Fed Ex Ground</label><br><br>
+                <input type="radio" id="postal" name="postal" value="postal">
+                <label for="postal">US Postal Air</label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <input type="radio" id="fedexair" name="fedexair" value="fedexair">
+                <label for="fedexair">Fed Ex Air</label><br>
+            </fieldset>
+            
+            </div>
+            </div>
+<div class="row2">
+    <div>
+        <fieldset class="field-set1">
+            
+            <legend>Part Ordered</legend>
+            <label for="partnum">Part Number: </label>&nbsp; &nbsp; &nbsp;
+            <input id="partnum" placeholder="10152"><br><br>
+            <label for="descr">Description: </label>&nbsp; &nbsp; &nbsp; 
+            <input id="descr" placeholder="Oil Filter"><br><br>
+            <label for="price">Price per part: </label>&nbsp;
+            <input id="price" placeholder="$7.15">&nbsp; &nbsp;
+            <label for="qty">Quantity: </label> &nbsp;
+            <input id="qty" placeholder="2"><br><br>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <input type="checkbox" id="checkbox" name="oversize" value="oversize">
+            <label for="checkbox">Oversize Container?</label><br>
+        </fieldset>
+        </div>
+    <div>
+        <fieldset class="field-set1">
+            <legend>Output</legend>
+            <label for="cost">Cost: </label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input id="cost" placeholder="$15.02"><br><br>
+            <label for="saletax">Sales Tax: </label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input id="saletax" placeholder="1.50"><br><br>
+            <label for="shipping">Shipping & Handling: </label>&nbsp;
+            <input id="shipping" placeholder="14.00"><br><br>
+            <label for="total">Total: </label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            <input id="total" placeholder="$30.52"><br><br>
+        </fieldset>
+        </div>
+        </div>
+        <br>
+        <br>
+        <button type="submit" name="compute" class="btn">Compute</button>
+        <button type="submit" name="new" class="btn">New Order</button>
+        <button type="button" name="exit" class="btn-exit">Exit</button>
+        </form>
+
+</div>
+</body>
+</html>
