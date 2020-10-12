@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sales Record</title>
+    <link rel="stylesheet" href="kesamockup.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="salesRecord">
+      <form action="">
+        <div class="row">
+          <div class="form-group col-md-7">
+            <fieldset>
+                <legend>Customer Information</legend>
+                <label for="CustomerID">Customer ID:</label>
+                <input type="number" placeholder="123-456-789" />
+                <br />
+                <label for="Name"> Name:</label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" id="name" placeholder="Tom Thumb"/>
+                <br />
+                <label for="State">State :</label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" placeholder="CA" />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox"  id="customerType" checked/>
+                <label for="customerType">Retail Customer</label>
+            </fieldset>
+        </div>
+         <div class="form-group col-md-5">
+                <fieldset>
+                  <legend>Shipping</legend>
+                  <div class="radioButtons">
+                    <input type="radio" id="ups"/>
+                    <label for="ups">UPS</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" id="fedexGround"/>
+                    <label for="fedexGround">FedEx-Ground</label><br /><br />
+                    <input
+                      type="radio"
+                      id="usPostalaAr"
+                     />
+                    <label for="usPostalAir">US Postal Air</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     <input
+                      type="radio"
+                      id="fedexAir"
+                     />
+                    <label for="fedexAir">FedEx Air</label><br />
+                  </div>
+                </fieldset>
+              </div>
+          </div>
+          <div class="row">
+          <div class="form-group col-md-7">
+            <fieldset>
+              <legend>Part Ordered</legend>
+              <div>
+                <label for="portNumber"> Port Number:</label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="number" placeholder="123" />
+                <br />
+                <label for="description">Description :</label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" placeholder="Description" />
+                <br />
+                <label for="price-per-part">Price Per Part :</label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="number" placeholder="1000" />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="quantity">Quantity :</label>
+                <input type="number" id="quantity" placeholder="1" />
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" id="containerSize" />
+                <label for="containerSize">Oversize Container?</label>
+              </div>
+            </fieldset>
+          </div>
+          <div class="form-group col-md-5 padding-0">
+            <fieldset>
+              <legend>Output</legend>
+              <div>
+                <label for="cost">Cost:</label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="number" placeholder="shs.1000" />
+                <br />
+                <label for="tax">Sales Tax :</label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="number" placeholder="1.5" />
+                <br />
+                <label for="shippingCost">Shipping & Handling :</label>
+                &nbsp;
+                <input type="text" placeholder="shs.2500" /><br />
+                <label for="Total">Total :</label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="number" placeholder="shs.3000" />
+              </div>
+            </fieldset>
+          </div>
+          </div>
+      </form>
+      <div class="button">
+        <button type="button" id="compute" class="btn btn-warning btn-sm">
+          Compute
+        </button>
+        <button type="button" id="order" class="btn btn-warning btn-sm">
+          New Order
+        </button>
+        <button type="button" id="exit" class="btn btn-warning btn-sm">
+          Exit
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
