@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <div class="back-ground">
+                <div class="one">
+                    <p class="sub-grid-1">Customer Information</p> <br>
+                    <div class="group">
+                        <label for="customer-id" class="sub-grid-2">Customer ID.</label>
+                        <input type="text" id="customer-id" placeholder="123-45-6789" class=" sub-grid-3 input" size="11">
+                    </div>
+                    <div class="group">
+                        <label for="name" class="sub-grid-4">Name</label>
+                        <input type="text" id="name" placeholder="Tom Thumb" class=" sub-grid-5 input" size="22">
+                    </div>
+                    <div class="sub-row">
+                        <div>
+                            <label for="state" class="sub-grid-6">State</label>
+                            <input type="text" id="state" placeholder="CA" class="input sub-grid-7" size="5">
+                        </div>
+                        <div>
+                            <label for="check-button" class="sub-grid-8"><input type="checkbox" id="check-button" class="sub-grid-8" checked>Retail Customer</label>
+                        </div>
+                    </div>  
+                </div>   
+            </div>
+            <div class="back-ground">
+                <div class="two">
+                    <p class="subgrid-11">Shipping</p>
+                    <div class="radio-group">
+                        <div class="radio-btn">
+                            <div>
+                                <label for="ups" class="sub-grid-13"><input type="radio" id="ups" name="shipping" value="ups" class="sub-grid-12">UPS</label>
+                            </div>
+                            <div>
+                                <label for="fed-ex" class><input type="radio" id="fed-ex" name="shipping" value="fed-ex" class="sub-grid-14">Fed Ex Ground</label>
+                            </div>
+                        </div> <br> <br><br>
+                        <div class="radio-btn">
+                            <div>
+                                <label for="other"><input type="radio" id="postal-air" name="shipping" value="postal-air">US Postal Air</label>
+                            </div>
+                            <div>
+                                <label for="fed-ex-air"><input type="radio" id="fed-ex-air" name="shipping" value="fed-ex-air">Fed Ex Air</label>
+                            </div>
+                        </div> 
+                    </div> 
+                </div>
+            </div>
+            <div class="black-ground">
+                <div class="three">
+                    <p>Part Ordered</p>
+                    <div class="group">
+                        <label for="part-number">Part Number</label>
+                        <input type="number" id="part-number" placeholder="10152">
+                    </div>
+                    <div class="group">
+                        <label for="description">Description</label>
+                        <input type="text" id="description" placeholder="Oil Filter">
+                    </div>
+                    <div class="same-line">
+                        <div>
+                            <label for="price-per-part">Price per part</label>
+                            <input type="text" id="price-per-part" placeholder="$7.51" size="5">
+                        </div>
+                        <div>
+                            <label for="quantity">Quantity</label>
+                            <input id="quantity" type="number" placeholder="2" size="2">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="oversize-container"><input type="checkbox" id="oversize-container">Oversize Container?</label>
+                    </div>
+                </div>
+            </div>
+            <div class="back-ground">
+                <div class="four">
+                    <p>Output</p>
+                    <div class="same-line">
+                        <label for="cost">Cost</label>
+                        <input type="text" id="cost" placeholder="$15.02">
+                    </div>
+                    <div class="same-line">
+                        <label for="sales-tax">Sales Tax</label>
+                        <input type="number" id="sales-tax" placeholder="1.50">
+                    </div>
+                    <div class="same-line">
+                        <label for="shipping-handling">Shipping & Handling</label>
+                        <input type="number" id="shipping-handling" placeholder="14.00">
+                    </div>
+                    <div class="same-line">
+                        <label for="total">Total</label>
+                        <input id="total" type="text" placeholder="$30.52">
+                    </div>
+                </div>
+            </div> 
+        </div>  
+        <div class="five">
+            <button>Compute</button>
+            <button>New Order</button>
+        </div>
+        <div class="six">
+            <button>Exit</button> 
+        </div>
+    </div>
+</body>
+</html>
