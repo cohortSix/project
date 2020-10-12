@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Form Assignment</title>
+		<link rel="stylesheet" type="text/css" href="index.css" />
+	</head>
+	<body>
+		<div class="container">
+			<form>
+				<div class="row">
+					<div class="col-1">
+						<div class="section">
+							<fieldset>
+								<legend>Customer Information</legend>
+								<div class="form-group">
+									<label for="customerID" class="label-align">
+										Customer ID:
+									</label>
+									<input
+										type="text"
+										id="customerID"
+										placeholder="123-45-6789"
+									/>
+								</div>
+								<div class="form-group">
+									<label for="name" class="label-align">
+										Name:
+									</label>
+									<input
+										type="text"
+										id="name"
+										placeholder="Tom Thumb"
+									/>
+								</div>
+								<div class="horizontal">
+									<div class="form-group">
+										<label for="state" class="label-align">
+											State:</label
+										>
+										<input
+											type="text"
+											placeholder="CA"
+											id="state"
+										/>
+									</div>
+									<div class="form-group check">
+										<input
+											type="checkbox"
+											id="checkbox"
+											checked
+										/>
+										<label for="checkbox">
+											Retail Customer
+										</label>
+									</div>
+								</div>
+							</fieldset>
+						</div>
+						<div class="section">
+							<fieldset>
+								<legend>Part Ordered</legend>
+								<div class="form-group">
+									<label for="partnumber" class="label-align">
+										Part Number:
+									</label>
+									<input
+										type="text"
+										id="partnumber"
+										placeholder="10152"
+									/>
+								</div>
+								<div class="form-group">
+									<label
+										for="description"
+										class="label-align"
+									>
+										Description:
+									</label>
+									<input
+										type="text"
+										id="description"
+										placeholder="Oil Filter"
+									/>
+								</div>
+								<div class="horizontal">
+									<div class="form-group">
+										<label for="price" class="label-align">
+											Price per part
+										</label>
+										<input
+											type="text"
+											id="price"
+											placeholder="$7.51"
+										/>
+									</div>
+									<div class="form-group quantity">
+										<label
+											for="quantity"
+											class="label-align"
+										>
+											Quantity:
+										</label>
+										<input
+											type="number"
+											id="quantity"
+											placeholder="2"
+										/>
+									</div>
+									<div>
+										<input type="checkbox" id="oversize" />
+										<label for="oversize">
+											<small>Oversize Container?</small>
+										</label>
+									</div>
+								</div>
+							</fieldset>
+						</div>
+					</div>
+					<div class="col-2">
+						<div class="section">
+							<fieldset class="radio">
+								<legend>Shipping</legend>
+								<div class="form-group">
+									<input
+										type="radio"
+										name="shipping"
+										checked
+										id="ups"
+									/>
+									<label for="ups"> UPS </label>
+									<input
+										type="radio"
+										name="shipping"
+										id="postalair"
+									/>
+									<label for="postalair">
+										US Postal Air
+									</label>
+								</div>
+								<div class="form-group">
+									<input
+										type="radio"
+										name="shipping"
+										id="fedground"
+									/>
+									<label for="fedground">
+										Fed Ex Ground
+									</label>
+									<input
+										type="radio"
+										name="shipping"
+										id="fedair"
+									/>
+									<label for="fedair"> Fed Ex Air </label>
+								</div>
+							</fieldset>
+						</div>
+						<div class="section">
+							<fieldset>
+								<legend>Output</legend>
+								<div class="form-group bill-margins">
+									<label for="cost" class="label-align">
+										Cost:
+									</label>
+									<input
+										type="text"
+										id="cost"
+										placeholder="$15.02"
+									/>
+								</div>
+								<div class="form-group bill-margins">
+									<label for="salestax" class="label-align">
+										Sales Tax:
+									</label>
+									<input
+										type="text"
+										id="salestax"
+										placeholder="1.50"
+									/>
+								</div>
+								<div class="form-group bill-margins">
+									<label for="handling" class="label-align">
+										Shipping & Handling
+									</label>
+									<input
+										type="text"
+										id="handling"
+										placeholder="14.00"
+									/>
+								</div>
+								<div class="form-group bill-margins">
+									<label for="total" class="label-align">
+										Total:
+									</label>
+									<input
+										type="text"
+										id="total"
+										placeholder="$30.52"
+									/>
+								</div>
+							</fieldset>
+						</div>
+					</div>
+				</div>
+				<div class="row button-container">
+					<div class="left-buttons">
+						<button>Compute</button>
+						<button>New Order</button>
+					</div>
+					<div class="right-buttons">
+						<button>Exit</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
