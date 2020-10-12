@@ -1,0 +1,274 @@
+
+    <!--MatiaKaweesi@gmail.com   mobile +256705175329 all rights reserved
+        
+        in this form , used field sets
+
+        Lets go ............. 
+    -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        </head>
+        <title>FORM!Matia Kaweesi</title>
+    
+        <!--Yeah........ lets  add some style first, we shall go with the internal.  how do you see...! if you want external, make ya own!!!! -->
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+            }
+    
+             /***field set first  and the rest are html classes as you can also see ***/
+          fieldset {
+               
+              
+               position: relative;
+                border: 2.5px solid #ebebeb;
+                margin-top: 20px;
+                padding: 20px 10px 10px;
+                border-radius: 5px;
+                background-color: #ffaa65; 
+                }
+          
+            .bg{
+                background-color: #ffaa65;
+                padding-top: 0.1px;
+                border-radius: 0px 0px 10px 10px;
+                margin-left: 10px;
+            }
+    
+            .border {
+                position: relative;
+                border-radius: 5px;
+                background-color: #ffaa65; 
+                }
+    
+            .btn{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                height: 30px;
+                width: 100px;
+                display: inline-block;
+                padding: 5px 5px;
+                border-radius: 5px;
+                color: #000000;
+                background: #ffaa65;
+                border: 2.5px solid #aaaaaa;
+                margin-left: 10px;
+                margin-right: 15px;
+            }
+            .btn3{
+                float: right;
+            }
+    
+            .container{
+                width: 790px;
+                margin-left: 250px;
+                margin-right: 250px;
+                margin-top: 30px;
+                background: #f18d3b46;
+                padding: 5px 5px 6px 5px;
+            }
+    
+            .form-row {
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+            }
+            .form-group {
+                margin-bottom: 1rem;
+            }
+    
+            div {
+                column-gap: 10px;
+            }
+    
+            .row {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+            }
+    
+            label{
+                float: left;
+                width: 11em;
+            }
+    
+            .input-field {
+                margin-left: 1em;
+                padding: .2em;
+                margin-bottom: .5em;
+    
+            }
+            .input-field2 {
+                margin-left: .1em;
+            }
+            .oversize{
+                display: inline-flex;
+                justify-content: flex-end;
+                margin-top:.7em;
+                margin-left: 150px;
+            }
+            .radio{
+                display: inline-flex;
+                justify-content: flex-end;
+                margin-top:.4em;
+                padding-right: 7px;
+            }
+            .text{
+                text-align: right;
+            }
+            ::placeholder{
+                color: #000000;
+            }
+        </style>
+        <!-- the css has ended here for today  @css ends here-->
+    
+    </head>
+    <body>
+        <div class="container">
+            <!--form starts here-->
+            <form>
+                <div class="form-row">
+                    <div class="bg">
+                        <fieldset>
+                        <legend>Customer Information</legend>
+                        <div class="border">
+                            
+                            <div class="form-group"> 
+                                <label>Customer ID:</label>
+                                <input type="text" size="12" class="input-field2" id="customerID" name="CustInfo" placeholder="123-45-6789">
+                            </div>
+                            <div class="form-group">
+                                <label>Name:</label>
+                                <input type="text" id="name" class="input-field2" size="24"  name="CustName" placeholder="Tom Thumb">
+                            </div>
+                            <div class="row">
+                                <div>
+                                    <label>State:</label>
+                                    <input type="text" size="6"  class="input-field2" id="state" name="CustState" placeholder="CA">
+                                </div>
+                                <div> 
+                                    <label><input type="checkbox" id="retailCustomer" name="RetailCust" checked>Retail Customer</label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    </div>
+    
+    
+    
+                    <br>
+    
+    
+    
+    
+                    <div class="bg"> 
+                        <fieldset>
+                        <legend>Shipping</legend>
+                        <div class="border">
+                        
+                            <div class="radio">
+                                <div>
+                                    <label><input type="radio" class="input-field" id="ups" name="shipping" checked>UPS</label>
+                                </div>
+                                <div>
+                                    <label><input type="radio" class="input-field" id="fedExGround" name="shipping">Fed Ex Ground</label>
+                                </div>
+                            </div><br><br><br>
+                            <div class="radio">
+                                <div>
+                                    <label><input type="radio" class="input-field" id="usPostalAir" name="shipping">US Postal Air</label>
+                                </div>
+                                <div>
+                                    <label><input type="radio" class="input-field" id="fedExAir" name="shipping">Fed Ex Air</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </fieldset>
+                </div>
+    
+                
+                <br>
+    
+    
+    
+    
+    
+    
+    
+                <div class="form-row">
+                    <div class="bg">
+                         <fieldset>
+                        <legend> Part Ordered</legend>
+                        <div class="border">
+                           
+                            <div class="form-group">
+                                <label>Part Number:</label>
+                                <input type="text" size="24" class="input-field2"  id="partNo" name="PartNum" placeholder="10152">
+                            </div>
+                            <div class="form-group">
+                                <label>Description:</label>
+                                <input type="text"  size="24" class="input-field2"  id="description" name="Descript" placeholder="Oli Filter">
+                            </div>
+                            <div class="row">
+                                <div>
+                                    <label> Price per part</label>
+                                    <input type="text" id="partPrice" class="input-field2 text" size="6" name="PricePart" placeholder="$7.51">
+                                </div>
+                                <div>
+                                    <label>Quantity:
+                                        <input type="text" id="quantity" class="input-field2 text" size="6" name="Qty" placeholder="2"></label>
+                                </div>
+                            </div>
+                            <div class="oversize">
+                                <label> <input type="checkbox" id="oversizeContainer" name="ContainerSize">Oversize Container?</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    </div>
+                    <br>
+    
+    
+    
+    
+                    <div class="bg">
+                          <fieldset>
+                        <legend> Output</legend>
+                        <div class="border">
+                            <div class="row">
+                                <label>Cost:</label>
+                                <input type="text" class="input-field text" size="15" id="cost" name="Cost" placeholder="$15.02">
+                            </div>
+                            <div class="row">
+                                <label>Sales Tax:</label>
+                                <input type="text" class="input-field text" size="15" id="salesTax" name="SalesTax"placeholder="1.50">
+                            </div>
+                            <div class="row">
+                                <label>Shipping & Handling:</label>
+                                <input type="text" class="input-field text" size="15" id="shippingHandling" name="ShipHandling" placeholder="14.00">
+                            </div>
+                            <div class="row">
+                                <label>Total:</label>
+                                <input type="text" class="input-field text" size="15"  id="total" name="Total" placeholder="$30.52">
+    
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                </div>
+                <br>
+    
+    
+                <button type="submit" class="btn" name="compute">Compute</button>
+                <button type="submit" class="btn" name="newOrder">New Order</button>
+                <button type="button" class="btn btn3" name="exit">Exit</button>
+            </form>
+            <!--Form-->
+        </div>
+    </body>
+    </html> 
