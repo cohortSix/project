@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="form.css" />
+</head>
+<body>
+    <div class="big">
+      <form >
+        <div class="row-1">
+          <div class="RN">
+            <div class="border">
+              <h3>Customer Information</h3>
+              <div class="formgrp">
+                <label>Customer ID</label>
+                <input type="text" id="CustomerID"  size="10" class="input2"name="CustomerInformation" />
+              </div>
+              <div class="formgrp">
+                <label>Name</label>
+                <input type="text" id="name"  size="15" class="input2" name="CustomerName"/>
+              </div>
+              <div class="row-2">
+                <div>
+                <label>State</label>
+                <input type="text" id="State" size="6" class="input2" name="CustomerState" />
+              </div>
+              <div>
+
+                <label>Retail Customer:</label>
+                <input
+                  type="checkbox"
+                  id="retailerCustomer"
+                  name="RetailerCustomer"
+                />
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="RN">
+        <div class="border">
+        <h3>Shipping:</h3>
+        <div class="radio">
+        <div>
+          <label><input type="radio" id="UPS"  size="" class="input1" name="shipping" value="" />UPS:</label>
+          
+        </div>
+        <div>
+          <label><input type="radio" id="Fed Ex Ground"  size="" class="input1" name="Shipping" value="" />Fed Ex Ground</label>
+          
+        </div>
+        </div>
+        <br>
+        <br>
+        <div class="radio">
+        <div>
+          <label> <input type="radio" id="US Postal Air" size="" class="input1" name="Shipping" />US Postal Air</label>
+          
+        </div>
+        <div>
+          <label>  <input type="radio" id="Fed Ex Air" size="" class="input" name="Shipping" />Fed Ex Air</label>
+         
+        </div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="row-1">
+<div class="RN">
+    <div class="border">
+
+    <h3>Part Ordered</h3>
+    
+  <div class="formgrp">
+  <label>Part Number:</label>
+  <input type="text" id="PartNumber" size="20" class="input2" name="PartNumber" />
+  </div>
+    <div class="formgrp">
+      <label>Description:</label>
+      <input type="text" id="description"size="20" class="input2" name="Description" />
+    </div>
+    <div class="row-2">
+      <div>
+      <label>Price Per Part</label>
+      <input
+        type="text"
+        id="Part per Price"
+        name="Price Per Part"
+        class="input2"
+        size="5"
+      />
+    </div>
+    <div>
+      <label>Quantity:</label>
+      <input type="text" id="quantity"   size="5" class="input2"name="quantity" />
+    </div>
+</div>
+    <div>
+        <label>Over Sized Container?</label>
+        <input
+          type="checkbox"
+          id="over sized Container?"
+          name="over sized Container?"
+          
+        />
+      </div>
+    </div>
+</div>
+
+      <br/>
+      <div class="RN">
+        <div class="border">
+        <h3>Output:</h3>
+      <div class="row-2">
+        <label>Cost:</label>
+        <input type="text" id="cost"class="input1"
+        size="10"name="Cost" />
+      </div>
+      <div class="row-2">
+        <label>Sales Tax:</label>
+        <input type="text" id="Sales Tax" class="input1"
+        size="10" name="Sales Tax" />
+      </div>
+      <div class="row-2">
+
+      <label>shipping & Handling:</label>
+      <input
+        type="text"
+        id="shipping & Handling"
+        name="shipping&Handling"
+        class="input1"
+          size="10"
+      />
+    </div>
+    <div class="row-2">
+      <label>Total:</label>
+      <input type="text" id="total" class="input1"
+      size="10" name="Total" />
+    </div>
+  </div>
+</div>
+</div>
+<br />
+<br />
+<button type="submit" class="btn computebtn" name="compute">
+Compute
+</button>
+<button type="submit" class="btn" name="newOrder">newOrder</button>
+<button type="button" class="btn exitbtn" name="exit" value="">Exit</button>
+</form>
+</div>
+</body>
+</html>
