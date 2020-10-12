@@ -1,3 +1,4 @@
+/*Style overall div*/
 .salesRecord{
     width: 1000px;
     height: 450px;
@@ -11,6 +12,8 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
 }
+
+/*End of div*/
 legend {
 	width: auto !important;
     border: none;
