@@ -1,0 +1,128 @@
+,<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Image reproducing</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./Css/stylesheet.css'>
+    <link rel ="stylesheet" href ="./Css/bootstrap/bootstrap.css">
+    
+</head>
+<body>
+    <div class="container" id="focontainer">  
+        
+       <div class="form-row">
+       <div class="col-md-6 mb-6" id="entireform" >
+           <div>Customer information</div>
+           <label for="customerid" >Customer ID:</label>
+           <input type="text" name="customerid" placeholder="123-45-6789" required id="inputid" ><br>
+           <label for="Name">Name:</label>
+           <input type="text" name="Name" placeholder="Tom Thumb" required id="inputname" >
+
+           <div class="col-md-6 mb-3">
+            <label for="Status" style="margin-left: -10px;" >Status:</label>
+            <input type="text" name="status" placeholder="CA" required id="inputstatus" >
+        
+
+            <input type="checkbox" name="retail" checked required id="inputretail" >
+               <label for="retail" id="labelretail">Retail Customer</label>
+            
+
+           </div>
+            
+
+        </div>
+        </div>
+    </div>
+
+
+   <div class="containeritem" >
+        <div class="form-row">
+           <div class="col-md-6 mb-6" id="shippingoptions" >
+              <label>Shipping</label><br>
+ 
+              <input type="radio" value="UPS" name="shipping" checked  style="margin-top: 50px;"> UPS  
+             <input type="radio" value="feg" name="shipping" style="margin-left: 200px;"> Fed Ex Ground<br>
+              <input type="radio" value="upa" name="shipping" style="margin-top: 90px;"> US Portal Air
+              <input type="radio" value="fea" name="shipping" style="margin-left: 140px;"> Fed Ex Air<br>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom" >
+    <div class="container" id="focontainer" style="margin-left: 100px; width: 1300px;">  
+        
+       <div class="form-row">
+       <div class="col-md-6 mb-6" id="orderform" >
+           <div>Part Ordered</div>
+           <label for="partnumber" >Part Number:</label>
+           <input type="text" name="partnumber" placeholder="10152" required style="margin-left: 20px;" ><br>
+           <label for="decription">Description:</label>
+           <input type="text" name="description" placeholder="Oil filter" required style="margin-left: 30px;" >
+           
+
+           <div class="col-md-7 mb-6">
+            <label for="Status" style="margin-left: -10px;" >Price per part:</label>
+            <input type="text" name="price" placeholder="5751" required style="margin-left: 10px;">
+           </div>
+
+           <div class="col-md-5 mb-6" id="quantity">
+            <label for="quantity">Quantity:</label>
+           <input type="text" name="quantity" placeholder="2" required style="margin-left: 10px;">
+           </div><br>
+           <div class="col-md-6 mb-6" style="margin-left:-120px; margin-top: 30px;">
+           <input type="chesssckbox" name="oversize" checked required style="margin-left: 300px; margin-top: -60px;">
+               <label for="oversize" id="labeloversize">Oversize Container?</label> 
+           </div>
+        </div>
+
+        </div>
+    </div>
+
+    <div class="container" id="focontainer" style="margin-left: 650px;margin-top: -630px; width: px;">  
+        
+       <div class="form-row">
+       <div class="col-md-6 mb-6" id="output">
+           <div>Output</div>
+           <label for="cost" >Cost:</label>
+           <input type="text" name="cost" placeholder="$15.02" required id="inputcost"  ><br>
+           <label for="tax">Sales Tax:</label>
+           <input type="text" name="tax" placeholder="1.50" required id="inputtax" ><br>
+
+           
+            <label for="handling">Shipping $ Handling:</label>
+            <input type="text" name="handling" placeholder="14.00" required id="inputhandle" ><br>
+            <label for="total" >Total:<label>
+            <input type="text" name="total" placeholder="$30.52" required id="inputtotal" >
+            
+
+           
+           
+
+           </div>
+            
+       </div>
+      
+        </div>
+        <div class ="finish" >
+        <button> Compute</button>
+        <button style="margin-left: 10px;">Next Order</button>
+        <button id="exitbutton" >Exit</button>
+        </div>
+        </div>
+    
+
+    
+
+
+
+
+
+
+
+
+    <script src="image.js"></script>  
+</body>
+</html>
