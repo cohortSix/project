@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Form</title>
+    <style>
+        body {
+            background-color:pink;
+        }
+        fieldset {
+            background-color: peru;
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            width: 50%;
+            float: left;
+        }
+    
+        legend {
+            display: block;
+                        
+            padding-block-start: 12px;
+        
+        }
+    
+        input {
+            margin: 5px;
+        
+        }
+      label {
+          width: 150px;
+          display: inline-block;
+      }
+        
+    </style>
+    <link rel="stylesheet" type="text/css" href="form.css" />
+</head>
+<body>
+    <form>
+        <fieldset id="fa">
+        <legend>Customer information</legend>
+        <label for="Customer">Customer ID:</label> 
+        <input type="number" id="Customer" name="Customer" size="5" maxlength="10" /><br/><br/>
+        <label for="name">Name:</label> 
+        <input type="text" id="name" name="username"/><br/><br/>
+        <label for="st">State:</label> 
+        <input type="text" id="st" name="st" size="5" />
+        <input type="checkbox" id="retail" name="retail" value="Retail  Customer">
+        <label for="retail">Retail Customer</label>
+        </fieldset>
+
+        <fieldset id="fs">
+            <legend>Shipping</legend>
+            <input type="radio" id="ups" name="ups" value="ups">
+            <label for="ups">UPS</label>
+            <input type="radio" id="feg" name="feg" value="Fed Ex Ground">
+            <label for="feg">Fed Ex Ground</label><br /><br />
+            <input type="radio" id="us" name="us" value="US Portal Air">
+            <label for="us">US Postal Air</label>
+            <input type="radio" id="fea" name="fea" value="Fed Ex Air">
+            <label for="fea">Fed Ex Air</label>
+        </fieldset>
+
+        <fieldset id="fl">
+            <legend>Part Ordered</legend>
+            <label for="pt">Part Number:</label>
+            <input type="number" id="pt" name="pt" /><br /><br />
+            <label for="des">Description:</label>
+            <input type="text" id="des" name="description" /><br /><br />
+            <label for="ppp">Price per part:</label>
+            <input type="text" id="ppp" name="ppp" size="10" />
+            <label for="qt">Quantity:</label>
+            <input type="text" id="qt" name="qt" size="4" /><br/><br/>
+            <input type="checkbox" id="oc" name="oc" value="oversize container" />
+            <label for="oc">Oversize Container</label>
+        </fieldset>
+
+
+        <fieldset id="fz">
+            <legend>Output</legend>
+            <label for="ct">Cost:</label>
+            <input type="text" id="ct" name="ct" /><br /><br />
+            <label for="st">Sales Tax:</label>
+            <input type="number" id="st" name="st" /><br /><br />
+            <label for="sp">Shipping & Handling:</label>
+            <input type="text" id="sp" name="sp" /><br/><br/>
+            <label for="tt">Total:</label>
+            <input type="number" id="tt" name="tt" />
+        </fieldset><br>
+
+        <button>Compute</button>
+        <button>New Order</button>
+        <button>Exit</button>
+
+       
+    </form>
+
+</body>
+</html>

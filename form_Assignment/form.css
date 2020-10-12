@@ -1,0 +1,18 @@
+#fa {
+    padding-bottom: 55px;
+}
+#fs {
+padding-bottom: 120px;
+}
+#fz {
+   padding-bottom: 29px;
+   align-items: stretch; 
+   
+}
+#fl {
+   padding-bottom: 39px; 
+}
+button {
+    margin: 20px;
+    background-color: peru;
+    }
