@@ -1,0 +1,115 @@
+/* Form Css Stylesheet.*/
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+
+/*styling form background Section background*/
+.bg {
+  background-color: orange;
+  padding-top: 0.1px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+/*Styling Section border*/
+.border {
+  position: relative;
+  border: 2.5px solid #ebebeb;
+  margin-top: 20px;
+  padding: 20px 10px 10px;
+  border-radius: 5px;
+  background-color: orange;
+}
+
+/*Styling Section border label*/
+.border h4 {
+  color: #000000;
+  line-height: 10px;
+  font-weight: lighter;
+  padding: 0 1px;
+  position: absolute;
+  background-color: orange;
+  top: -25px;
+  left: 10px;
+}
+
+/*Styling form buttons*/
+.btn {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  height: 30px;
+  width: 100px;
+  display: inline-block;
+  padding: 5px 5px;
+  border-radius: 5px;
+  color: #000000;
+  background: orange;
+  border: 2.5px solid #aaaaaa;
+}
+.btn3 {
+  float: right;
+}
+
+/*Styling form container.*/
+.container {
+  width: 790px;
+  margin: auto;
+  margin-top: 30px;
+  background: #f18d3b46;
+  padding: 5px 5px 6px 5px;
+}
+
+/*STyling row and grouping.*/
+.form-row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.form-group {
+  margin-bottom: 16px;
+}
+
+/*Styling column gap for column sections*/
+div {
+  column-gap: 10px;
+}
+
+/*Styling form section rows*/
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/*Styling form labels*/
+label {
+  float: left;
+  width: 153px;
+}
+
+/*Styling form input fields and text-alignment*/
+.input-field {
+  margin-left: 13px;
+  padding: 3px;
+  margin-bottom: 10.5px;
+}
+.input-field2 {
+  margin-left: 1.6px;
+}
+.oversize {
+  display: inline-flex;
+  justify-content: flex-end;
+  margin-top: 11px;
+  margin-left: 150px;
+}
+.radio {
+  display: inline-flex;
+  justify-content: flex-end;
+  margin-top: 6.4px;
+  padding-right: 2px;
+}
+.text {
+  text-align: right;
+}
