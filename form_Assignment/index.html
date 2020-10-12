@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Assignment</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../CSS/style1.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <div class="form-row">
+          <div class="back_ground">
+            <div class="border">
+              <h5>Customer Information</h5>
+              <div class="form-group">
+                <label>Customer ID:</label>
+                <input
+                  type="text"
+                  size="12"
+                  class="input-field2"
+                  id="customerID"
+                  name="CustInfo"
+                  placeholder="123-45-6789"
+                />
+              </div>
+              <div class="form-group">
+                <label>Name:</label>
+                <input
+                  type="text"
+                  id="name"
+                  class="input-field2"
+                  size="24"
+                  name="CustName"
+                  placeholder="Tom Thumb"
+                />
+              </div>
+              <div class="row">
+                <div>
+                  <label>State:</label>
+                  <input
+                    type="text"
+                    size="6"
+                    class="input-field2"
+                    id="state"
+                    name="CustState"
+                    placeholder="CA"
+                  />
+                </div>
+                <div>
+                  <label
+                    ><input
+                      type="checkbox"
+                      id="retailCustomer"
+                      name="RetailCust"
+                    />Retail Customer</label
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="back_ground">
+            <div class="border">
+              <h5>Shipping</h5>
+
+              <div class="radio">
+                <div>
+                  <label
+                    ><input
+                      type="radio"
+                      name="shipping"
+                      class="input-field"
+                      size="12"
+                      id="ups"
+                    />UPS</label
+                  >
+                </div>
+                <div>
+                  <label
+                    ><input
+                      type="radio"
+                      class="input-field"
+                      id="fedExGround"
+                      name="shipping"
+                    />Fed Ex Ground</label
+                  >
+                </div>
+              </div>
+              <br /><br /><br />
+              <div class="radio">
+                <div>
+                  <label
+                    ><input
+                      type="radio"
+                      class="input-field"
+                      id="usPostalAir"
+                      name="shipping"
+                    />US Postal Air</label
+                  >
+                </div>
+                <div>
+                  <label
+                    ><input
+                      type="radio"
+                      class="input-field"
+                      id="fedExAir"
+                      name="shipping"
+                    />Fed Ex Air</label
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="form-row">
+          <div class="back_ground">
+            <div class="border">
+              <h5>Part Ordered</h5>
+              <div class="form-group">
+                <label>Part Number:</label>
+                <input
+                  type="text"
+                  id="partNo"
+                  class="input-field2"
+                  name="PartNum"
+                  placeholder="10152"
+                  size="20"
+                />
+              </div>
+              <div class="form-group">
+                <label>Description:</label>
+                <input
+                  type="text"
+                  size="10"
+                  id="description"
+                  name="Descript"
+                  placeholder="Oil Filter"
+                />
+              </div>
+              <div class="row">
+                <div>
+                  <label> Price per part</label>
+                  <input
+                    type="text"
+                    id="partPrice"
+                    class="input-field2 text"
+                    size="6"
+                    name="PricePart"
+                    placeholder="$7.51"
+                  />
+                </div>
+                <div>
+                  <label
+                    >Quantity:
+                    <input
+                      type="text"
+                      id="quantity"
+                      class="input-field2 text"
+                      size="6"
+                      name="Qty"
+                      placeholder="2"
+                  /></label>
+                </div>
+              </div>
+              <div class="oversize">
+                <label>
+                  <input
+                    type="checkbox"
+                    id="oversizeContainer"
+                    name="ContainerSize"
+                  />Oversize Container?</label
+                >
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="back_ground">
+            <div class="border">
+              <h5>Output</h5>
+              <div class="row">
+                <label>Cost:</label>
+                <input
+                  type="text"
+                  placeholder="$15.02"
+                  class="input-field text"
+                  id="cost"
+                  size="15"
+                  name="Cost"
+                />
+              </div>
+              <div class="row">
+                <label>Sales Tax:</label>
+                <input
+                  type="text"
+                  class="input-field text"
+                  size="15"
+                  id="salesTax"
+                  name="SalesTax"
+                  placeholder="1.50"
+                />
+              </div>
+              <div class="row">
+                <label>Shipping & Handling:</label>
+                <input
+                  type="text"
+                  class="input-field text"
+                  size="15"
+                  id="shippingHandling"
+                  name="ShipHandling"
+                  placeholder="14.00"
+                />
+              </div>
+              <div class="row">
+                <label>Total:</label>
+                <input
+                  type="text"
+                  class="input-field text"
+                  size="15"
+                  id="total"
+                  name="Total"
+                  placeholder="$30.52"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+        <button type="submit" class="btn" name="compute">Compute</button>
+        <button type="submit" class="btn" name="newOrder">New Order</button>
+        <button
+          type="button"
+          class="btn btn3"
+          onclick="self.close()"
+          name="exit"
+        >
+          Exit
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
