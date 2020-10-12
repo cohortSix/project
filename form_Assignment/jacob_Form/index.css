@@ -1,0 +1,142 @@
+*{
+	box-sizing: border-box;
+	font-family: serif;
+}
+.container{
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 20px;
+	padding-left: 20px;
+	background-color: rgb(253,223,201);
+}
+.row{
+	display: flex;
+	flex: row;
+	flex-wrap: wrap;
+	width: 100%;
+}
+.col-1{
+	min-width:55%;
+	margin-right: 3px;
+}
+.col-2{
+	min-width: 20%;
+}
+.form-group *{
+	margin: 10px 0;
+}
+
+.label-align{
+	display: inline-block;
+	width:30%;
+}
+.section{
+	background-color: rgb(255,186,133);
+}
+
+fieldset{
+	border:1px solid rgb(200,200,200);
+	margin-top: 10px;
+}
+
+input[id="name"],input[id="description"],input[id="partnumber"]{
+	width: 60%;
+}
+input[id="state"]{
+	width: 10%;
+}
+input[id="price"]{
+	width: 20%;
+}
+input[id="quantity"]{
+	width: 25%;
+}
+input[id="oversize"]{
+	margin-left: 30%;
+}
+label[for="quantity"]{
+	padding-left: 10px;
+	margin-right: 40px;
+}
+.horizontal{
+	position: relative;
+}
+.check{
+	position: absolute;
+	right: 30px; top:2.5px;
+}
+.quantity{
+	position: absolute;
+	right: 0px;top: 0;
+	width: 45%;
+}
+label[for="ups"],label[for="fedground"],label[for="fedair"],label[for="postalair"]{
+	display: inline-block;
+	width: 40%;
+}
+input[type="radio"]{
+	margin-top: 20px;
+}
+.radio div{
+	margin-top: 5px;
+	margin-bottom: 14px;
+}
+label[for="cost"],label[for="salestax"],label[for="handling"],label[for="total"]{
+	display: inline-block;
+	width: 60%;	
+}
+#cost,#salestax,#handling,#total{
+	width: 30%;
+}
+.bill-margins{
+	margin-top: -5.5px;
+}
+.button-container{
+	min-height: 70px;
+	position: 
+}
+.button-container button{
+	margin-top: 20px;
+	height: 25px;
+	width:120px;
+}
+.right-buttons{
+	float: right;
+	min-width: 50%;
+}
+.right-buttons button{
+	float: right;
+	margin-right:15px;
+	background-color: rgb(255,186,133);
+}
+.left-buttons{
+	min-width: 50%;
+}
+.left-buttons button{
+	margin-right:20px;
+	background-color: rgb(255,186,133);
+}
+@media(max-width: 574px){
+	.container{
+		width: 100%;
+		padding-left: 0;
+	}
+	.col-1,.col-2{
+		width: 100%;
+	}
+	.left-buttons{
+		min-width: 75%;
+	}
+	.right-buttons{
+		min-width: 40px;
+		margin-left: 10px;
+	}
+	.left-buttons button{
+		width: 80px;
+		margin-right: 10px;
+	}
+	.right-buttons button{
+		width: 50px;
+	}
+}
