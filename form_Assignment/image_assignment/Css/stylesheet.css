@@ -1,0 +1,109 @@
+#focontainer {
+  padding: 50px;
+  margin-left: 100px;
+  width: 1300px;
+  margin-top: 0px;
+  margin-bottom: 150px;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+  width: 50%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: #ffaa65;
+  outline: none;
+}
+button {
+  border: 2px solid black;
+  background-color: #ffaa65;
+}
+div {
+  padding: 10px 0;
+}
+#entireform {
+  background-color: #ffaa65;
+  height: 350px;
+}
+#inputid {
+  margin-left: 20px;
+}
+#inputname {
+  margin-left: 65px;
+}
+#inputstatus {
+  margin-left: 62px;
+}
+#inputretail {
+  margin-left: 300px;
+  margin-top: -60px;
+}
+#labelretail {
+  margin-left: 340px;
+  margin-top: -65px;
+  white-space: nowrap;
+}
+.containeritem {
+  margin-left: 700px;
+  width: 1050px;
+  margin-top: -580px;
+}
+#shippingoptions {
+  background-color: #ffaa65;
+  height: 350px;
+  padding-left: 50px;
+}
+.bottom {
+  margin-top: -60;
+}
+
+#orderform {
+  background-color: #ffaa65;
+  height: 360px;
+}
+#quantity {
+  margin-left: 300px;
+  margin-top: -102px;
+}
+#labeloversize {
+  margin-left: 340px;
+  margin-top: -65px;
+  white-space: nowrap;
+}
+
+#output {
+  background-color: #ffaa65;
+  height: 360px;
+}
+#inputcost {
+  margin-left: 200px;
+  text-align: right;
+}
+#inputtax {
+  margin-left: 170px;
+  text-align: right;
+}
+#inputhandle {
+  margin-left: 90px;
+  text-align: right;
+}
+#inputtotal {
+  margin-left: 240px;
+  text-align: right;
+}
+.finish {
+  margin-left: 145px;
+  margin-top: -200px;
+}
+#exitbutton {
+  margin-left: 825px;
+  padding-left: 20px;
+  text-align: justify;
+}
