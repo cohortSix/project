@@ -1,0 +1,140 @@
+<!-- 
+	A form that picks customer info, shipping info and returns total cost of parts.
+	It has buttons to compute cost, abutton to enter new customer info, and to exit the application
+ -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+			integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+			crossorigin="anonymous"
+		/>
+		<style>
+			.container {
+				margin: 0 auto;
+				padding-top: 5px;
+				border: gray solid 0.5px;
+				background-color: rgb(245, 190, 168);
+			}
+			label {
+				color: black;
+				font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+				font-weight: bold;
+				font-size: small;
+			}
+			.row {
+				padding: 5px;
+			}
+
+			.col {
+				margin: auto;
+				padding: 20px;
+			}
+			form {
+				padding: 10px;
+				background-color: rgb(233, 141, 108);
+			}
+			.btn{
+				background-color: rgb(233, 141, 108);
+				color: black;
+				font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+				font-weight: bold;
+				font-size: small;
+			}
+		</style>
+		
+		<title>My Form</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<form>
+						<h5>customer Information</h5>
+						<label for="id">Customer Id:</label>
+						<input type="number" name="id" placeholder="123-456-789" /><br />
+						<label for="name">Name:</label>
+						<input type="text" name="name" placeholder="Tom Thumb"/><br />
+						<label for="state">State:</label>
+						<input type="text" name="state" placeholder="CA"/><br />
+
+						<input type="checkbox" name="retail_customer" />
+						<label for="retail_customer">Retail Customer</label>
+					</form>
+				</div>
+				<div class="col">
+					<form>
+						<h5>Shipping</h5>
+						<input type="radio" name="UPS" />
+						<label for="UPS">UPS</label><br />
+						<input type="radio" name="fedex" />
+						<label for="fedex">Fed Ex Ground</label><br />
+						<input type="radio" name="us_postal_air" />
+						<label for="us_postal_air">Us Postal Air</label><br />
+						<input type="radio" name="fedex_air" />
+						<label for="fedex_air">Fedex Air</label>
+					</form>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<form action="">
+						<h5>Part Ordered</h5>
+						<label>Part id:</label>
+						<input type="number" name="part_id"placeholder="10152" /><br />
+						<label>Description:</label>
+						<input type="text" name="description" placeholder="Oil filter"/><br />
+						<label>Price per part:</label>
+						<input type="number" name="price" id="pricePerPart" placeholder="$7.51" />
+						<label>Quantity</label>
+						<input type="number" name="quantity" id="quantity" placeholder="2"/><br>
+						<input type="checkbox" name="container_size" id="" />
+						<label>Over-Size Container</label>
+					</form>
+				</div>
+				<div class="col">
+					<form action="">
+						<h5>Output</h5>
+						<label>Cost:</label>
+						<input type="number" name="cost" id="cost" placeholder="$15.02"/><br />
+						<label>Sales Tax:</label>
+						<input type="number" name="sales_tax" id="salesTax" placeholder="1.50"/><br />
+						<label>Shippng Handling:</label>
+						<input type="number" name="part_id" id="shippingHandling" placeholder="14.00"/><br />
+						<label>Total:</label>
+						<input type="number" name="total" id="Total"placeholder="30.52" /><br />
+					</form>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<button id="compute" type="button" class="btn">Compute</button>
+					<button id="newOrder" type="button" class="btn">New Order</button>
+				</div>
+				<div class="col">
+					<button id="exit" type="button" class="btn">Exit</button>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="form.js"></script>
+	<script
+		src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"
+	></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+		crossorigin="anonymous"
+	></script>
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+		crossorigin="anonymous"
+	></script>
+</html>
