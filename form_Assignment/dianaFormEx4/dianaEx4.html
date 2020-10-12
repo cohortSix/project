@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="dis.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <fieldset class="customer-information">
+            <legend>Customer Information</legend>
+            <label class="label">Customer ID:</label>
+            <input type="id" placeholder="123-45-6789" /><br />
+            <label class="label">Name:</label>
+            <input type="text" class="tom" placeholder="Tom Thumb"/>
+            <br />
+            <label class="label">State:</label>
+            <input type="text" class="state" placeholder="CA" />
+            <input type="checkbox"  checked />
+            <label>Retail Customer</label>
+            </fieldset>
+          </div>
+          
+        <div class="col-5">
+          <fieldset class="shipping">
+          <legend>Shipping</legend> 
+          <input type="radio" class="ups" checked />
+          <label class="label" for="id">UPS</label>
+          <input type="radio" class="fed" />
+          <label class="label" for="id">Fed Ex Ground</label><br />
+          <input type="radio" class="ups" />
+          <label class="label" for="id">US Postal Air</label>
+          <input type="radio" class="fed1" />
+          <label class="label" for="id">Fed Ex Air</label>
+        </fieldset>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-6">
+          <fieldset class="part-order">
+          <legend>Part Ordered</legend> 
+          <label class="label" for="id">Part Ordered:</label>
+          <input type="id" placeholder="10152" class="order" /><br />
+          <label class="label">Description:</label>
+          <input type="text" class="filter" placeholder="Oil Filter"/>
+          <br />
+          <label for="Price" class="label">Price per part:</label>
+          <input type="text" class="prize" placeholder="$7.51" />
+          <label for="id" class="label quantity">Quantity:</label>
+          <input type="text" class="quantity" placeholder="2" /><br />
+          <input type="checkbox" class="over-size" />
+          <label class="label">Oversize Container?</label>
+          </fieldset>
+        </div>
+        <div class="col-5">
+          <fieldset>
+          <legend>Output</legend>  
+          <label class="label">Cost:</label>
+          <input type="text" class="price" placeholder="$15.02" /><br />
+          <label class="label">Sale Tax:</label>
+          <input type="text" class="price" placeholder="1.50" /><br />
+          <label class="label">Shipping & Handling:</label>
+          <input type="text" class="price" placeholder="14.00" /><br />
+          <label class="label">Total:</label>
+          <input type="text" class="price" placeholder="$30.52" />
+        </fieldset>
+        </div>
+      </div>
+      <button class="compute btn">Compute</button>
+      <button class="new-order btn">New Order</button>
+      <button class="exit">Exit</button>
+    </div>
+  </body>
+</html>

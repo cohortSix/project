@@ -1,0 +1,113 @@
+.container {
+    background-color: #fce7e0;
+    height: 700px;  
+  }
+  
+  .col-5 {
+    font-weight: bold;
+    background: #ffaa65;
+    height: 280px; 
+    margin:10px 10px 10px 15px;
+   
+  }
+  .col-6 {
+      font-weight: bold;
+    background: #ffaa65;
+    height: 280px;
+   margin:15px 10px 10px 10px;
+    
+  }
+  
+  fieldset {
+    border: 2px solid #ebebeb;
+    width: 105%;
+    border-radius: 5px;
+  }
+  
+  .label {
+    font-weight: bold;
+    padding-top: 25px;
+    padding-left: 25px;
+  }
+  
+  legend {
+    width: auto;
+    font-size: 16px;
+    position: relative;
+  }
+  
+  .customer-information {
+    padding-bottom: 60px;
+  }
+  .state {
+    margin-left: 50px;
+    width: 170px;
+  }
+  
+  .shipping {
+    padding-bottom: 120px;
+  }
+  
+  .tom { 
+    width: 400px; 
+  }
+  
+  .btn {
+    background: #ffaa65;
+    width: 120px;
+    border: 2px solid gray;
+    font-weight: bold;
+  }
+  
+  .exit {
+    background: #ffaa65;
+    width: 120px;
+    border: 2px solid gray;
+    float: right;
+    margin-right: 60px;
+  }
+  
+  .ups{
+    margin-left: 80px;
+  }
+  
+  .fed{
+    margin-left: 60px;
+  }
+  .fed1{
+    margin-left: 60px  
+  }
+  
+  .order {
+    width: 320px;
+    margin-left: 10px;
+  }
+  
+  .filter {
+    width: 320px;
+    margin-left: 20px;
+  }
+  
+  .prize {
+    width: 150px;
+    margin-left: 2px;
+    text-align: right;
+  }
+  
+  .quantity {
+    width: 50px;
+    text-align: right;
+    margin-left: 40px;
+  }
+  
+  .over-size {
+    margin-left: 110px;
+  }
+  
+  .price {
+    float: right;
+    text-align: right;
+    margin-top: 20px;
+    width: 220px;
+    margin-right: 10px;
+  }
