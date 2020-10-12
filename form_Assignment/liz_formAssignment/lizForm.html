@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liz Form</title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="./lizForm.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row row-cols-2">
+        <div class="col-md-6 topRow">
+          <form>
+            <h4>Customer Information</h4>
+            <div class="form-group row">
+              <label
+                for="customerID"
+                class="col-sm-4 col-form-label label_length"
+                >Customer ID:</label
+              >
+              <div class="col-sm-4 input_length">
+                <input
+                  type="number"
+                  class="form-control"
+                  placeholder="123-45-6789"
+                  id="customerID"
+                />
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label
+                for="customerID"
+                class="col-sm-3 col-form-label label_length"
+                >Name:</label
+              >
+              <div class="col-sm-8 input_length">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Tom Thumb"
+                  id="name"
+                />
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label
+                for="customerID"
+                class="col-sm-3 col-form-label label_length"
+                >State:</label
+              >
+              <div class="col-sm-2 input_length">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="CA"
+                  id="state"
+                />
+              </div>
+
+              <div class="form-check-inline">
+                <label class="form-check-label checkboxSpace">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    value=""
+                    id="retailCustomer"
+                  />
+                  Retail Customer
+                </label>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-md-6 topRow">
+          <form>
+            <h4 class="shipping">Shipping</h4>
+            <br />
+            <div class="form-group row">
+              <div class="form-check-inline col-sm-5">
+                <label class="form-check-label">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    name="radioSelect"
+                    value="ups"
+                  />
+                  UPS
+                </label>
+              </div>
+              <div class="form-check-inline col-sm-5">
+                <label class="form-check-label">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    name="radioSelect"
+                    value="fedExG"
+                  />
+                  Fed Ex Ground
+                </label>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="form-check-inline col-sm-5">
+                <label class="form-check-label">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    name="radioSelect"
+                    value="postalAir"
+                  />
+                  US Postal Air
+                </label>
+              </div>
+              <div class="form-check-inline col-sm-5">
+                <label class="form-check-label">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    name="radioSelect"
+                    value="fedExA"
+                  />
+                  Fed Ex Air
+                </label>
+              </div>
+            </div>
+            <br />
+            <br />
+            <br />
+          </form>
+        </div>
+      </div>
+
+      <div class="row row-cols-2">
+        <div class="col-md-6 btmRow">
+          <form>
+            <h4 class="partOrdered">Part Ordered</h4>
+            <div class="form-group row">
+              <label for="partNum" class="col-sm-3 col-form-label label_length"
+                >Part Number:</label
+              >
+              <div class="col-sm-8 input_length">
+                <input
+                  type="number"
+                  class="form-control"
+                  placeholder="10152"
+                  id="partNum"
+                />
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label
+                for="partDetail"
+                class="col-sm-3 col-form-label label_length"
+                >Description:</label
+              >
+              <div class="col-sm-8 input_length">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Oil Filter"
+                  id="partDetail"
+                />
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="price" class="col-sm-4 col-form-label label_length2"
+                >Price per part:</label
+              >
+              <div class="col-sm-3 input_length">
+                <input
+                  type="number"
+                  class="form-control"
+                  placeholder="$ 7.51"
+                  id="price"
+                />
+              </div>
+
+              <label for="qty" class="col-sm-3 col-form-label label_length3"
+                >Quantity:</label
+              >
+              <div class="col-sm-2 input_length">
+                <input
+                  type="number"
+                  class="form-control"
+                  placeholder="2"
+                  id="qty"
+                />
+              </div>
+            </div>
+
+            <div class="form-check-inline">
+              <label class="form-check-label">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  value=""
+                  id="oversize"
+                />
+                Oversize Container ?
+              </label>
+            </div>
+            <br />
+          </form>
+        </div>
+
+        <div class="col-md-6 btmRow">
+          <form>
+            <h4 class="output">Output</h4>
+            <div class="form-group row">
+              <label for="cost" class="col-sm-5 col-form-label label_length4">
+                Cost:</label
+              >
+              <div class="col-sm-6 input_length">
+                <input
+                  type="number"
+                  class="form-control"
+                  placeholder="$ 15.02"
+                  id="cost"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="tax" class="col-sm-5 col-form-label label_length4">
+                Sales Tax:</label
+              >
+              <div class="col-sm-6 input_length">
+                <input
+                  type="number"
+                  class="form-control"
+                  placeholder="1.50"
+                  id="tax"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label
+                for="shipHand"
+                class="col-sm-6 col-form-label label_length4"
+              >
+                Shipping & Handling:</label
+              >
+              <div class="col-sm-6 input_length">
+                <input
+                  type="number"
+                  class="form-control"
+                  placeholder="14.00"
+                  id="shipHand"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="total" class="col-sm-5 col-form-label label_length4">
+                Total:</label
+              >
+              <div class="col-sm-6 input_length">
+                <input
+                  type="number"
+                  class="form-control"
+                  placeholder="$ 30.52"
+                  id="total"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="row row-cols-2" id="btnBar">
+        <div class="col-sm-8">
+          <button type="button" class="btn btn-warning" value="submit">
+            Compute
+          </button>
+          <button type="button" class="btn btn-warning" value="submit">
+            New Order
+          </button>
+        </div>
+        <div class="col-sm-4">
+          <button type="button" class="btn btn-warning exit" value="submit">
+            Exit
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

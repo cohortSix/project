@@ -1,0 +1,84 @@
+.container {
+  background-color: #fce3c7;
+  margin: 80px;
+  width: fit-content;
+}
+.col-md-6 {
+  background-color: #ffbf82;
+  width: 450px;
+  /* height: 250px; */
+  margin: 5px;
+  padding: 1px;
+  padding-top: 10px;
+}
+.topRow {
+  height: 195px;
+}
+.btmRow {
+  height: 228px;
+}
+.row-cols-2 {
+  margin: 5px;
+}
+#btnBar {
+  height: 50px;
+}
+form {
+  border: solid 2px oldlace;
+  padding-left: 15px;
+}
+label {
+  font-weight: inherit;
+  font-size: 12pt;
+}
+.label_length {
+  width: 130px;
+}
+.label_length2 {
+  width: 132px;
+}
+.label_length3 {
+  width: 100px;
+}
+.label_length4 {
+  width: 185px;
+}
+.input_length {
+  padding: 0;
+}
+.checkboxSpace {
+  margin-left: 50px;
+  padding: 5px;
+  margin-bottom: 16px;
+}
+#oversize {
+  margin-left: 120px;
+}
+#price,
+#qty,
+#cost,
+#tax,
+#shipHand,
+#total {
+  text-align: right;
+}
+h4 {
+  margin-top: -10px;
+  background: #ffbf82;
+  width: 200px;
+}
+h4.shipping {
+  width: 80px;
+}
+h4.partOrdered {
+  width: 120px;
+}
+h4.output {
+  width: 70px;
+}
+button {
+  width: 100px;
+}
+button.exit {
+  float: right;
+}
