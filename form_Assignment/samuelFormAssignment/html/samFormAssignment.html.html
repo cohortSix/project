@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samuel's Form Assignment</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/samFormAssignment.css.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-5">
+        <fieldset class="customer-info">
+          <legend>Customer Information</legend>
+          <label class="label" for="id">Customer ID:</label>
+          <input type="id" placeholder="123-45-6789" /><br />
+          <label for="name" class="label">Name:</label>
+          <input type="text" class="input-name" placeholder="Tom Thumb" /><br />
+          <label for="text" class="label">State:</label>
+          <input type="text" class="input-state" placeholder="CA" />
+          <input type="checkbox" class="input-retail" checked />
+          <label for="checkbox" class="label-retail">Retail Customer</label>
+        </fieldset>
+      </div>
+
+      <div class="col-5">
+        <fieldset class="shipping">
+          <legend>Shipping</legend>
+          <input type="radio" class="ship" checked />
+          <label class="label" for="id">UPS</label>
+          <input type="radio" class="ship-1" />
+          <label class="label" for="id">Fed Ex Ground</label><br />
+          <input type="radio" class="ship" />
+          <label class="label" for="id">US Postal Air</label>
+          <input type="radio" class="ship-2" />
+          <label class="label" for="id">Fed Ex Air</label>
+        </fieldset>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-5">
+        <fieldset class="part-order">
+          <legend>Part Ordered</legend>
+          <label class="label" for="id">Part Ordered:</label>
+          <input type="id" placeholder="10152" class="input-part" /><br />
+          <label for="text" class="label">Description:</label>
+          <input type="text" class="input-desc" placeholder="Oil Filter" /><br />
+          <label for="Price" class="label">Price per part:</label>
+          <input type="text" class="input-price" placeholder="$7.51" />
+          <label for="id" class="label quantity">Quantity:</label>
+          <input type="text" class="input-quantity" placeholder="2" /><br />
+          <input type="checkbox" class="input-size" />
+          <label for="checkbox" class="label">Oversize Container?</label>
+        </fieldset>
+      </div>
+
+      <div class="col-5">
+        <fieldset>
+          <legend>Output</legend>
+          <label for="Price" class="label">Cost:</label>
+          <input type="text" class="input-prices" placeholder="$15.02" /><br />
+          <label for="Price" class="label">Sale Tax:</label>
+          <input type="text" class="input-prices" placeholder="1.50" /><br />
+          <label for="Price" class="label">Shipping & Handling:</label>
+          <input type="text" class="input-prices" placeholder="14.00" /><br />
+          <label for="Price" class="label">Total:</label>
+          <input type="text" class="input-prices" placeholder="$30.52" />
+        </fieldset>
+      </div>
+    </div>
+    
+    <button class="compute btn">Compute</button>
+    <button class="new-order btn">New Order</button>
+    <button class="exit btn">Exit</button>
+  </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+</html>
