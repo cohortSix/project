@@ -1,0 +1,38 @@
+function phone (type, manufacture, batterycapacity,owner , size,CPU,Ram){
+this.type=type;
+this.manufacture=manufacture;
+this.batterycapacity=batterycapacity;
+this.owner=owner;
+this.size=size;
+this.CPU=CPU;
+this.Ram=Ram;
+
+this.answer=function(){
+    console.log("beep");
+}
+
+}
+// Another oject 
+var phone1=new phone("iphone","Apple","2658 mAH","maria","11max","touchScreen","4GB Storage");
+var phone2=new phone("Andriod","Motorola","2000 mA","Milly","2560 px","screentouch","8GB storage");
+console.log(phone1);
+console.log(phone2)
+
+
+function bag(type,designer,durable,manufacture,owner, size , material){
+    this.type=type;
+    this.designer=designer;
+    this.durable=durable;
+    this.manufacture=manufacture;
+    this.owner=owner;
+    this.size=size;
+    this.material=material;
+    
+    this.wear=function(){
+        console.log("looking smart")
+    }
+}
+var bag1 = new bag("backpack","GUCCI","10years","China","Malcolm","18.5cubeinches","sisal");
+var bag2 = new bag("clucth","LouiViton","50years","Italy","Andrew","28cubeinches","lether");
+console.log(bag1);
+console.log(bag2);
